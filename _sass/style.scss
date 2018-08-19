@@ -73,6 +73,7 @@ nav{
       font-size: 200%;
       margin: 1em;
       text-align: center;
+      //font-family: 'Abadi Extra Light';
     }
   }
 }
@@ -698,17 +699,6 @@ footer{
   }
 
 
-
-
-  /*#projektside{
-    header{
-      img{
-        width: 10%;
-      }
-    }
-  }*/
-
-
   .projektside{
     .oppe{
       h2{
@@ -764,15 +754,27 @@ footer{
 
 //Desktop
 @media only screen and (min-width: 1200px){
+  p{
+    width: 90%;
+  }
   header{
-    height: 5.6em;
+    height: 6.4em;
     img{
-      margin-top: 0.4em;
-      width: 18%;
+      margin: 0.6em 0.5em 0 7.6em;
+      width: 25%;
     }
-    section{
-      button{
-        font-size: 185%;
+    #navdesktop{
+      width: 55%;
+      ul{
+        padding: 2.2em 0;
+        a{
+          li{
+            font-size: 70%;
+              &:hover{
+                text-decoration: underline;
+              }
+          }
+        }
       }
     }
   }
@@ -797,13 +799,38 @@ footer{
     }
     .overskriftbaggrund{
       font-size: 180%;
+      width: 40%;
+      margin: 0 auto;
     }
     #ommig{
       #evner{
+        h2{
+          font-size: 150%;
+        }
         .left{
           .flexcontainer{
             button{
-              width: 237px;
+              font-size: 80%;
+              width: 190px;
+            }
+          }
+        }
+      }
+      .right{
+        h1{
+          font-size: 100%;
+        }
+        .flexcontainer{
+          a{
+            &:hover{
+              button{
+                text-decoration: underline;
+                transition: 0.2s;
+                background-color: $hoverdeler;
+              }
+            }
+            button{
+              border-radius: 10px;
             }
           }
         }
@@ -813,23 +840,28 @@ footer{
       .flexcontainer{
         margin: 3em 0;
         figure{
-          width: 180px;
+          width: 280px;
           &:hover{
             button{
               text-decoration: underline;
-              transition: 0.5s;
+              transition: 0.2s;
+              background-color: $hoverdeler;
             }
             .billedeoverskrift2{
               //font-size: 170%;
               color: $overskrifter;
-              transition: 0.5s;
+              transition: 0.2s;
             }
           }
           button{
             font-size: 100%;
+            border-radius: 10px;
           }
         }
       }
     }
+  }
+  footer{
+    
   }
 }

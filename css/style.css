@@ -640,13 +640,6 @@ footer section a button {
     height: 690px;
   }
 
-  /*#projektside{
-    header{
-      img{
-        width: 10%;
-      }
-    }
-  }*/
   .projektside .oppe h2 {
     font-size: 150%;
   }
@@ -681,15 +674,28 @@ footer section a button {
   }
 }
 @media only screen and (min-width: 1200px) {
+  p {
+    width: 90%;
+  }
+
   header {
-    height: 5.6em;
+    height: 6.4em;
   }
   header img {
-    margin-top: 0.4em;
-    width: 18%;
+    margin: 0.6em 0.5em 0 7.6em;
+    width: 25%;
   }
-  header section button {
-    font-size: 185%;
+  header #navdesktop {
+    width: 55%;
+  }
+  header #navdesktop ul {
+    padding: 2.2em 0;
+  }
+  header #navdesktop ul a li {
+    font-size: 70%;
+  }
+  header #navdesktop ul a li:hover {
+    text-decoration: underline;
   }
 
   main {
@@ -710,27 +716,47 @@ footer section a button {
   }
   #start .overskriftbaggrund {
     font-size: 180%;
+    width: 40%;
+    margin: 0 auto;
+  }
+  #start #ommig #evner h2 {
+    font-size: 150%;
   }
   #start #ommig #evner .left .flexcontainer button {
-    width: 237px;
+    font-size: 80%;
+    width: 190px;
+  }
+  #start #ommig .right h1 {
+    font-size: 100%;
+  }
+  #start #ommig .right .flexcontainer a:hover button {
+    text-decoration: underline;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    background-color: #7097b2;
+  }
+  #start #ommig .right .flexcontainer a button {
+    border-radius: 10px;
   }
   #start .projektbilleder .flexcontainer {
     margin: 3em 0;
   }
   #start .projektbilleder .flexcontainer figure {
-    width: 180px;
+    width: 280px;
   }
   #start .projektbilleder .flexcontainer figure:hover button {
     text-decoration: underline;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    background-color: #7097b2;
   }
   #start .projektbilleder .flexcontainer figure:hover .billedeoverskrift2 {
     color: #b2aa9f;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
   #start .projektbilleder .flexcontainer figure button {
     font-size: 100%;
+    border-radius: 10px;
   }
 }
