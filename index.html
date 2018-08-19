@@ -27,10 +27,18 @@
   </head>
 
 
+
+
+
+
+
+
 <!-- Sidens indhold starter -->
   <body>
 
-    <!-- Header = kasse med logo og burgermenu -->
+
+
+    <!-- Header = kasse med logo og nav -->
     <header>
 
       <section>
@@ -38,35 +46,38 @@
         <a href="index.html"><img src="stortsort.svg" alt=""></a>
 
 
-<section class="mobil">
-  <!-- Burgermenu -->
-  <button id="open"><i class="fas fa-bars" class="shadow"></i></button>
+<!-- Nav til mobil -->
+        <section class="mobil">
+          <!-- Burgermenu -->
+          <button id="open"><i class="fas fa-bars" class="shadow"></i></button>
 
-  <button id="close" class="lukmenu" type="button" name="button"><i class="fas fa-times"></i></button>
-
-
-
-<!-- Navigation  Menu -->
-<nav id="navmobil">
-  <ul>
-    <a href="index.html" class="lukmenu"> <li>Startside</li> </a>
-    <a href="#ommigdeler" class="lukmenu"> <li>Om Mig</li> </a>
-    <a href="#portfoliodeler" class="lukmenu"> <li>Portfolio</li> </a>
-    <a href="#kontakt" class="lukmenu"> <li>Kontakt</li> </a>
-  </ul>
-</nav>
-</section>
-</section>
+          <button id="close" class="lukmenu" type="button" name="button"><i class="fas fa-times"></i></button>
 
 
-      <nav id="navdesktop">
-        <ul>
-          <a href="index.html"> <li>Startside</li> </a>
-          <a href="#ommigdeler"> <li>Om Mig</li> </a>
-          <a href="#portfoliodeler"> <li>Portfolio</li> </a>
-          <a href="#kontakt"> <li>Kontakt</li> </a>
-        </ul>
-      </nav>
+
+            <!-- Navigation  Menu -->
+            <nav id="navmobil">
+              <ul>
+                <a href="index.html" class="lukmenu"> <li>Startside</li> </a>
+                <a href="#ommigdeler" class="lukmenu"> <li>Om Mig</li> </a>
+                <a href="#portfoliodeler" class="lukmenu"> <li>Portfolio</li> </a>
+                <a href="#kontakt" class="lukmenu"> <li>Kontakt</li> </a>
+              </ul>
+            </nav>
+            </section>
+        </section>
+
+
+<!-- Nav til tablet og større -->
+        <nav id="navdesktop">
+          <ul>
+            <a href="index.html"> <li>Startside</li> </a>
+            <a href="#ommigdeler"> <li>Om Mig</li> </a>
+            <a href="#portfoliodeler"> <li>Portfolio</li> </a>
+            <a href="#kontakt"> <li>Kontakt</li> </a>
+          </ul>
+        </nav>
+
 
 
     </header>
@@ -77,14 +88,30 @@
 
 
 
-    <!-- "indholdet" på siden -->
+
+
+
+
+<!--                                                         -->
+<!--                    "indholdet" på siden                 -->
+<!--                                                         -->
+
+
     <main id="start">
 
+
+<!-- Til top knap -->
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+
+
+
+
+
+
+
+<!-- Første billede + webdesigner kommunikation boks -->
       <article>
-
-
         <section id="startside">
           <img src="Projekter/Copenhagen_Tee/Instagram.jpg" alt="">
           <article>
@@ -95,13 +122,25 @@
 
 
 
+
+
+
+
 <!-- Blå deler streg -->
         <section class="deler"></section>
 
 
+
+
+
+
+
+
+<!--                                        Nyeste projekter                                 -->
         <section class="projektbilleder">
           <h1 class="overskriftbaggrund">- Nyeste Projekter -</h1>
 
+    <!-- Computerbokse -->
           <section class="flexcontainer">
             <figure class="flexitem">
               <a href="cphtee.html"> <figcaption class="billedeoverskrift1">Copenhagen Tees</figcaption> <figcaption class="billedeoverskrift2">Webshop</figcaption> <img src="Projekter/Copenhagen_Tee/cphtee_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
@@ -115,9 +154,12 @@
           </section>
 
         </section>
-
-
       </article>
+
+
+
+
+
 
 
 
@@ -128,18 +170,28 @@
 
 
 
+
+
+
+
+
+
+
+<!--                                    Om Mig                            -->
       <article id="ommig">
+
 
         <article class="">
           <h1 class="overskriftbaggrund">- Om Mig -</h1>
-<!-- INDSÆT TEKST -->
+<!-- Kort tekst om mig -->
           <p>Gennem handelskole og uddannelsen som multimediedesigner, har jeg opbygget store interesser inden for multimedieverdenen og det forretningsmæssige.</p>
           <p>Efter at have deltaget i diverse projekter, har jeg her også fået et stort flair for webshops og kommunikation</p>
         </article>
 
-
+<!-- Interesser -->
         <section id="evner">
           <h2>Interesser</h2>
+      <!-- Mine færdigheder bokse -->
           <section class="left">
             <section class="flexcontainer">
               <button class="flexitem" type="button" name="button">Branding  <i class="far fa-bookmark"></i></button>
@@ -148,34 +200,11 @@
               <button class="flexitem" type="button" name="button">Design  <i class="fas fa-pencil-alt"></i></button>
             </section>
           </section>
-
-
-
         </section>
 
 
 
-
-<!-- INDSÆT BILLEDER!!!!! -->
-
-<!--
-        <section>
-          <h2>Mine Færdigheder</h2>
-          <figure>
-            <figcaption>Photoshop</figcaption> <img src="" alt="">
-          </figure>
-          <figure>
-            <figcaption>HTML/CSS/JQuery</figcaption> <img src="" alt="">
-          </figure>
-          <figure>
-            <figcaption>Forretning</figcaption> <img src="" alt="">
-          </figure>
-          <figure>
-            <figcaption>Kommunikation</figcaption> <img src="" alt="">
-          </figure>
-        </section>
--->
-
+      <!-- Download af dokumenter -->
         <section class="right">
           <h1>Ønsker du at vide mere, er nedenfor link til LinkedIn samt download af ansøgning og CV</h1>
           <section class="flexcontainer">
@@ -184,20 +213,38 @@
             <a href="https://www.linkedin.com/in/nicole-hardt-622014130/" target="
             "> <button class="flexitem" type="button" name="button">LinkedIn</button> </a>
           </section>
-
         </section>
 
+
       </article>
+
+
+
+
+
+
+
 
 
 <!-- Blå deler -->
       <section class="deler" id="portfoliodeler"></section>
 
 
+
+
+
+
+
+
+
+
+<!--                                    Portfolio                            -->
+
       <article id="portfolio" class="projektbilleder">
 
         <h1 class="overskriftbaggrund">- Portfolio -</h1>
 
+      <!-- Computerbokse -->
         <section class="flexcontainer">
           <figure class="flexitem">
             <a href="cphtee.html"> <figcaption class="billedeoverskrift1">Copenhagen Tees</figcaption> <figcaption class="billedeoverskrift2">Webshop</figcaption> <img src="Projekter/Copenhagen_Tee/cphtee_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
@@ -215,7 +262,10 @@
             <a href="in2.html"> <figcaption class="billedeoverskrift1">IN2 Design</figcaption> <figcaption class="billedeoverskrift2">Webshop</figcaption> <img src="Projekter/IN2_Design/tema3_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
           </figure>
         </section>
+
+
       </article>
+
 
 
 
@@ -224,21 +274,30 @@
 
 
 
-    <!-- Kontakt -->
+
+
+
+
+
+
+
+<!--                                    Kontakt                            -->
     <footer id="kontakt">
-      <article class="">
+
+
+      <article>
         <h1>- Kontakt -</h1>
         <a href="mailto:nicolelhardt@gmail.com">nicolelhardt@gmail.com</a>
-
         <a href="tlf://52380654">+45 52 38 06 54</a>
       </article>
 
-    <section>
-      <a href="https://www.facebook.com/nicole.hardt"><button type="button" name="button"><i class="fab fa-facebook-square"></i></button></a>
-      <a href="https://www.linkedin.com/in/nicole-hardt-622014130/"><button type="button" name="button"><i class="fab fa-linkedin"></i></button></a>
-      <a href="https://github.com/nicolehardt"><button type="button" name="button"><i class="fab fa-github-square"></i></button></a>
-      <a href="https://www.instagram.com/nicolehardt/?hl=da"><button type="button" name="button"><i class="fab fa-instagram"></i></button></a>
-    </section>
+    <!-- Sociale medier -->
+      <section>
+        <a href="https://www.facebook.com/nicole.hardt"><button type="button" name="button"><i class="fab fa-facebook-square"></i></button></a>
+        <a href="https://www.linkedin.com/in/nicole-hardt-622014130/"><button type="button" name="button"><i class="fab fa-linkedin"></i></button></a>
+        <a href="https://github.com/nicolehardt"><button type="button" name="button"><i class="fab fa-github-square"></i></button></a>
+        <a href="https://www.instagram.com/nicolehardt/?hl=da"><button type="button" name="button"><i class="fab fa-instagram"></i></button></a>
+      </section>
 
 
       <article class="">
@@ -246,8 +305,13 @@
       </article>
 
 
-
     </footer>
+
+
+
+
+
+
 
   </body>
 
