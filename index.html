@@ -9,6 +9,9 @@
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
+    <!-- Link til jQuery bibliotek -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!-- Link til jquery fil -->
     <script src="js/jquery.js" type="text/javascript"></script>
 
@@ -18,8 +21,8 @@
     <!-- Fane navn -->
     <title></title>
 
-    <!-- Billede i fane - indsæt logo
-    <link rel="icon" type="image/png" href="logo.png"> -->
+    <!-- Billede i fane - indsæt logo-->
+    <link rel="icon" type="image/png" href="lillesort.png">
 
   </head>
 
@@ -30,54 +33,84 @@
     <!-- Header = kasse med logo og burgermenu -->
     <header>
 
-      <!-- Logo billede -->
-      <a href="#"><img src="almostwhite.svg" alt=""></a>
+      <section>
+        <!-- Logo billede -->
+        <a href="#"><img src="stortsort.svg" alt=""></a>
 
-      <!-- Burgermenu -->
-      <button><i class="fas fa-bars"></i></button>
 
-      <button type="button" name="button"><i class="fas fa-times"></i></button>
+<section class="mobil">
+  <!-- Burgermenu -->
+  <button id="open"><i class="fas fa-bars" class="shadow"></i></button>
 
-      <!-- Navigation  Menu -->
-      <nav>
+  <button id="close" class="lukmenu" type="button" name="button"><i class="fas fa-times"></i></button>
+
+
+
+<!-- Navigation  Menu -->
+<nav id="navmobil">
+  <ul>
+    <a href="#" class="lukmenu"> <li>Startside</li> </a>
+    <a href="#ommigdeler" class="lukmenu"> <li>Om Mig</li> </a>
+    <a href="#portfoliodeler" class="lukmenu"> <li>Portfolio</li> </a>
+    <a href="#kontakt" class="lukmenu"> <li>Kontakt</li> </a>
+  </ul>
+</nav>
+</section>
+</section>
+
+
+      <nav id="navdesktop">
         <ul>
           <a href="#"> <li>Startside</li> </a>
-          <a href="#"> <li>Om Mig</li> </a>
-          <a href="#"> <li>Portfolio</li> </a>
-          <a href="#"> <li>Kontakt</li> </a>
+          <a href="#ommigdeler"> <li>Om Mig</li> </a>
+          <a href="#portfoliodeler"> <li>Portfolio</li> </a>
+          <a href="#kontakt"> <li>Kontakt</li> </a>
         </ul>
       </nav>
+
 
     </header>
 
 
+
+
+
+
+
     <!-- "indholdet" på siden -->
-    <main>
+    <main id="start">
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
       <article>
 
 
-        <section>
-          <img src="" alt="">
-          <article class="">
-            <h1></h1>
-            <h2></h2>
+        <section id="startside">
+          <img src="Projekter/Copenhagen_Tee/Instagram.jpg" alt="">
+          <article>
+            <h1>Webdesigner & Kommunikation</h1>
+            <h2>Webshops</h2>
           </article>
         </section>
 
 
-        <section>
-          <h1>- Nyeste Projekter -</h1>
 
-          <section>
-            <figure>
-              <a href="#"> <figcaption>Copenhagen Tees</figcaption> <figcaption class="">Webshop</figcaption> <img src="Projekter/Copenhagen_Tee/cphtee_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
+<!-- Blå deler streg -->
+        <section class="deler"></section>
+
+
+        <section class="projektbilleder">
+          <h1 class="overskriftbaggrund">- Nyeste Projekter -</h1>
+
+          <section class="flexcontainer">
+            <figure class="flexitem">
+              <a href="cphtee.html"> <figcaption class="billedeoverskrift1">Copenhagen Tees</figcaption> <figcaption class="billedeoverskrift2">Webshop</figcaption> <img src="Projekter/Copenhagen_Tee/cphtee_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
             </figure>
-            <figure>
-              <a href="#"> <figcaption>Billetsalg</figcaption> <figcaption class="">Webshop</figcaption> <img src="Projekter/Billetsalg/bs_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
+            <figure class="flexitem">
+              <a href="billet.html"> <figcaption class="billedeoverskrift1">Billetsalg</figcaption> <figcaption class="billedeoverskrift2">Webshop</figcaption> <img src="Projekter/Billetsalg/bs_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
             </figure>
-            <figure>
-              <a href="#"> <figcaption>Gastronomisk Innovation</figcaption> <figcaption class="">Infoside</figcaption> <img src="Projekter/Gastronomisk_Innovation/gi_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
+            <figure class="desktop" class="flexitem">
+              <a href="gi.html"> <figcaption class="billedeoverskrift1">Gastronomisk Innovation</figcaption> <figcaption class="billedeoverskrift2">Infoside</figcaption> <img src="Projekter/Gastronomisk_Innovation/gi_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
             </figure>
           </section>
 
@@ -89,26 +122,43 @@
 
 
 
-      <article>
+<!-- Blå deler -->
+      <section class="deler" id="ommigdeler"></section>
+
+
+
+
+      <article id="ommig">
 
         <article class="">
-          <h1>- Om Mig -</h1>
+          <h1 class="overskriftbaggrund">- Om Mig -</h1>
 <!-- INDSÆT TEKST -->
-          <p></p>
+          <p>Gennem handelskole og uddannelsen som multimediedesigner, har jeg opbygget store interesser inden for multimedieverdenen og det forretningsmæssige.</p>
+          <p>Efter at have deltaget i diverse projekter, har jeg her også fået et stort flair for webshops og kommunikation</p>
         </article>
 
 
-        <section>
-          <h2>Mine Evner</h2>
-<!-- INDSÆT BILLEDER -->
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
+        <section id="evner">
+          <h2>Interesser</h2>
+          <section class="left">
+            <section class="flexcontainer">
+              <button class="flexitem" type="button" name="button">Branding  <i class="far fa-bookmark"></i></button>
+              <button class="flexitem" type="button" name="button">Business  <i class="fas fa-briefcase"></i></button>
+              <button class="flexitem" type="button" name="button">Kodning  <i class="fas fa-code"></i></button>
+              <button class="flexitem" type="button" name="button">Design  <i class="fas fa-pencil-alt"></i></button>
+            </section>
+          </section>
+
+
+
         </section>
 
 
+
+
 <!-- INDSÆT BILLEDER!!!!! -->
+
+<!--
         <section>
           <h2>Mine Færdigheder</h2>
           <figure>
@@ -124,36 +174,45 @@
             <figcaption>Kommunikation</figcaption> <img src="" alt="">
           </figure>
         </section>
+-->
 
-        <section>
-          <h1>Ønsker du at vide mere, er nedenfor link til LinkedIn samt download af ansøgning samt CV</h1>
-          <button type="button" name="button">Ansøgning</button>
-          <button type="button" name="button">CV</button>
-          <a href="#"> <button type="button" name="button">LinkedIn</button> </a>
+        <section class="right">
+          <h1>Ønsker du at vide mere, er nedenfor link til LinkedIn samt download af ansøgning og CV</h1>
+          <section class="flexcontainer">
+            <a href="#" download><button class="flexitem" type="button" name="button">Ansøgning</button></a>
+            <a href="#" download><button class="flexitem" type="button" name="button">CV</button></a>
+            <a href="https://www.linkedin.com/in/nicole-hardt-622014130/" target="
+            "> <button class="flexitem" type="button" name="button">LinkedIn</button> </a>
+          </section>
+
         </section>
 
       </article>
 
 
-      <article>
+<!-- Blå deler -->
+      <section class="deler" id="portfoliodeler"></section>
 
-        <h1>- Portfolio -</h1>
 
-        <section>
-          <figure>
-            <a href="#"> <figcaption>Copenhagen Tees</figcaption> <figcaption class="">Webshop</figcaption> <img src="Projekter/Copenhagen_Tee/cphtee_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
+      <article id="portfolio" class="projektbilleder">
+
+        <h1 class="overskriftbaggrund">- Portfolio -</h1>
+
+        <section class="flexcontainer">
+          <figure class="flexitem">
+            <a href="cphtee.html"> <figcaption class="billedeoverskrift1">Copenhagen Tees</figcaption> <figcaption class="billedeoverskrift2">Webshop</figcaption> <img src="Projekter/Copenhagen_Tee/cphtee_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
           </figure>
-          <figure>
-            <a href="#"> <figcaption>Billetsalg</figcaption> <figcaption class="">Webshop</figcaption> <img src="Projekter/Billetsalg/bs_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
+          <figure class="flexitem">
+            <a href="billet.html"> <figcaption class="billedeoverskrift1">Billetsalg</figcaption> <figcaption class="billedeoverskrift2">Webshop</figcaption> <img src="Projekter/Billetsalg/bs_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
           </figure>
-          <figure>
-            <a href="#"> <figcaption>Gastronomisk Innovation</figcaption> <figcaption class="">Infoside</figcaption> <img src="Projekter/Gastronomisk_Innovation/gi_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
+          <figure class="flexitem">
+            <a href="gi.html"> <figcaption class="billedeoverskrift1">Gastronomisk Innovation</figcaption> <figcaption class="billedeoverskrift2">Infoside</figcaption> <img src="Projekter/Gastronomisk_Innovation/gi_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
           </figure>
-          <figure>
-            <a href="#"> <figcaption>Kick It</figcaption> <figcaption class="">Innovativ App</figcaption> <img src="Projekter/Kick_It/tema4_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
+          <figure class="flexitem">
+            <a href="kick.html"> <figcaption class="billedeoverskrift1">Kick It</figcaption> <figcaption class="billedeoverskrift2">Innovativ App</figcaption> <img src="Projekter/Kick_It/tema4_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
           </figure>
-          <figure>
-            <a href="#"> <figcaption>IN2 Design</figcaption> <figcaption class="">Webshop</figcaption> <img src="Projekter/IN2_Design/tema3_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
+          <figure class="flexitem">
+            <a href="in2.html"> <figcaption class="billedeoverskrift1">IN2 Design</figcaption> <figcaption class="billedeoverskrift2">Webshop</figcaption> <img src="Projekter/IN2_Design/tema3_macbook_stor.png" alt=""> <button type="button" name="button">Læs Mere</button> </a>
           </figure>
         </section>
       </article>
@@ -166,17 +225,26 @@
 
 
     <!-- Kontakt -->
-    <footer>
+    <footer id="kontakt">
       <article class="">
         <h1>- Kontakt -</h1>
         <a href="mailto:nicolelhardt@gmail.com">nicolelhardt@gmail.com</a>
 
         <a href="tlf://52380654">+45 52 38 06 54</a>
       </article>
-      <button type="button" name="button"><i class="fab fa-facebook-square"></i></button>
-      <button type="button" name="button"><i class="fab fa-linkedin"></i></button>
-      <button type="button" name="button"><i class="fab fa-github-square"></i></button>
-      <button type="button" name="button"><i class="fab fa-instagram"></i></button>
+
+    <section>
+      <a href="https://www.facebook.com/nicole.hardt"><button type="button" name="button"><i class="fab fa-facebook-square"></i></button></a>
+      <a href="https://www.linkedin.com/in/nicole-hardt-622014130/"><button type="button" name="button"><i class="fab fa-linkedin"></i></button></a>
+      <a href="https://github.com/nicolehardt"><button type="button" name="button"><i class="fab fa-github-square"></i></button></a>
+      <a href="https://www.instagram.com/nicolehardt/?hl=da"><button type="button" name="button"><i class="fab fa-instagram"></i></button></a>
+    </section>
+
+
+      <article class="">
+        <p>&copy; nicolehardt.eu</p>
+      </article>
+
 
 
     </footer>

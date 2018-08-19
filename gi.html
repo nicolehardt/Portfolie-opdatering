@@ -9,6 +9,9 @@
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
+    <!-- Link til jQuery bibliotek -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!-- Link til jquery fil -->
     <script src="js/jquery.js" type="text/javascript"></script>
 
@@ -18,8 +21,8 @@
     <!-- Fane navn -->
     <title></title>
 
-    <!-- Billede i fane - indsæt logo
-    <link rel="icon" type="image/png" href="logo.png"> -->
+    <!-- Billede i fane - indsæt logo-->
+    <link rel="icon" type="image/png" href="lillesort.png">
 
   </head>
 
@@ -30,27 +33,197 @@
     <!-- Header = kasse med logo og burgermenu -->
     <header>
 
-      <!-- Logo billede -->
-      <a href="#"><img src="almostwhite.svg" alt=""></a>
+      <section>
+        <!-- Logo billede -->
+        <a href="#"><img src="stortsort.svg" alt=""></a>
 
-      <!-- Burgermenu -->
-      <button><i class="fas fa-bars"></i></button>
 
-      <button type="button" name="button"><i class="fas fa-times"></i></button>
+<section class="mobil">
+  <!-- Burgermenu -->
+  <button id="open"><i class="fas fa-bars" class="shadow"></i></button>
 
-      <!-- Navigation  Menu -->
-      <nav>
+  <button id="close" class="lukmenu" type="button" name="button"><i class="fas fa-times"></i></button>
+
+
+
+<!-- Navigation  Menu -->
+<nav id="navmobil">
+  <ul>
+    <a href="#" class="lukmenu"> <li>Startside</li> </a>
+    <a href="#ommigdeler" class="lukmenu"> <li>Om Mig</li> </a>
+    <a href="#portfoliodeler" class="lukmenu"> <li>Portfolio</li> </a>
+    <a href="#kontakt" class="lukmenu"> <li>Kontakt</li> </a>
+  </ul>
+</nav>
+</section>
+</section>
+
+
+      <nav id="navdesktop">
         <ul>
           <a href="#"> <li>Startside</li> </a>
-          <a href="#"> <li>Om Mig</li> </a>
-          <a href="#"> <li>Portfolio</li> </a>
-          <a href="#"> <li>Kontakt</li> </a>
+          <a href="#ommigdeler"> <li>Om Mig</li> </a>
+          <a href="#portfoliodeler"> <li>Portfolio</li> </a>
+          <a href="#kontakt"> <li>Kontakt</li> </a>
         </ul>
       </nav>
 
+      
     </header>
 
-    <main>
+    <main class="projektside">
+
+      <!--<button onclick="topFunction()" class="myBtn" title="Go to top">Top</button>-->
+
+      <article class="oppe">
+        <h1>Gastronomisk Innovation</h1>
+        <h2>Infoside</h2>
+        <p>En informativ side om virksomheden Gastronomisk Innovation</p>
+      </article>
+
+
+
+
+
+      <!-- Slideshow starter -->
+
+            <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img class="slideimg" src="Projekter/Gastronomisk_Innovation/hjemmeside1.png" alt="slide1" style="width:100%">
+                <div class="text">Ny forside</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img class="slideimg" src="Projekter/Gastronomisk_Innovation/hjemmeside3.png" alt="slide2" style="width:100%">
+                <div class="text">Ny eventside</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img class="slideimg" src="Projekter/Gastronomisk_Innovation/bmc.jpg" alt="slide3" style="width:100%">
+                <div class="text">Business Model Canvas</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img class="slideimg" src="Projekter/Gastronomisk_Innovation/mockup.jpg" alt="slide3" style="width:100%">
+                <div class="text">Mockup af hjemmeside</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img class="slideimg" src="Projekter/Gastronomisk_Innovation/moodboardhjemme.jpg" alt="slide3" style="width:100%">
+                <div class="text">Moodboard - Hjemmeside</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img class="slideimg" src="Projekter/Gastronomisk_Innovation/moodboardvideo.jpg" alt="slide3" style="width:100%">
+                <div class="text">Moodboard - Video</div>
+              </div>
+
+
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+            </div>
+
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+      <!-- Slideshow slutter -->
+
+
+
+
+
+
+<!--
+      <section>
+        <figure>
+          <img src="Projekter/Gastronomisk_Innovation/hjemmeside1.png" alt="Ny Forside">
+          <figcaption>Ny forside</figcaption>
+        </figure>
+        <figure>
+          <img src="Projekter/Gastronomisk_Innovation/hjemmeside3.png" alt="Ny Eventside">
+          <figcaption>Ny eventside</figcaption>
+        </figure>
+        <figure>
+          <img src="Projekter/Gastronomisk_Innovation/bmc.jpg" alt="Business model canvas">
+          <figcaption>Business model canvas for Gastronomisk Innovation</figcaption>
+        </figure>
+        <figure>
+          <img src="Projekter/Gastronomisk_Innovation/mockup.jpg" alt="Mockup forside">
+          <figcaption>Mockup af ny forside</figcaption>
+        </figure>
+        <figure>
+          <img src="Projekter/Gastronomisk_Innovation/moodboardhjemme.jpg" alt="Moodboard hjemmeside">
+          <figcaption>Moodboard til hjemmeside</figcaption>
+        </figure>
+        <figure>
+          <img src="Projekter/Gastronomisk_Innovation/moodboardvideo.jpg" alt="Moodboard video">
+          <figcaption>Moodboard til video</figcaption>
+        </figure>
+      </section>-->
+
+      <article class="nede">
+        <h1>Formålet</h1>
+        <p>Gastronomisk Innovation var et projekt hvor vi skulle opdatere deres hjemmeside, og gøre den mere iøjnefaldende for deres målgruppe.</p>
+        <p>Her var markedet B2B, så her lagde vi stor vægt på målgruppen, og hvordan man bedst kunne komme ud med budskabet, så målgruppen ville forstå dette. </p>
+        <p>Vi havde også til opgave at producere en video, som skulle være med til at vise hvem de er, og hvad de laver</p>
+
+        <p>Mine primære opgaver:</p>
+        <ul>
+          <li>Kodning</li>
+          <li>Målgruppeanalyse</li>
+        </ul>
+
+        <section>
+          <h1>Klik nedenfor, for at se websitet</h1>
+          <a href="http://nicolehardt.eu/Eksamen1/index.html" target="_blank"><button type="button" name="button">Gastronomisk Innovation</button></a>
+        </section>
+      </article>
+
 
     </main>
 
@@ -63,12 +236,17 @@
 
             <a href="tlf://52380654">+45 52 38 06 54</a>
           </article>
-          <button type="button" name="button"><i class="fab fa-facebook-square"></i></button>
-          <button type="button" name="button"><i class="fab fa-linkedin"></i></button>
-          <button type="button" name="button"><i class="fab fa-github-square"></i></button>
-          <button type="button" name="button"><i class="fab fa-instagram"></i></button>
+          <section>
+            <a href="https://www.facebook.com/nicole.hardt"><button type="button" name="button"><i class="fab fa-facebook-square"></i></button></a>
+            <a href="https://www.linkedin.com/in/nicole-hardt-622014130/"><button type="button" name="button"><i class="fab fa-linkedin"></i></button></a>
+            <a href="https://github.com/nicolehardt"><button type="button" name="button"><i class="fab fa-github-square"></i></button></a>
+            <a href="https://www.instagram.com/nicolehardt/?hl=da"><button type="button" name="button"><i class="fab fa-instagram"></i></button></a>
+          </section>
 
 
+            <article class="">
+              <p>&copy; nicolehardt.eu</p>
+            </article>
         </footer>
 
       </body>

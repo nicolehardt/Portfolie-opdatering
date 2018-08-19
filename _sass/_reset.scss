@@ -5,4 +5,53 @@
 html, body{
   margin: 0;
   padding: 0;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  //background-color: $baggrund;
+}
+
+header{
+  //background-color: $highlight;
+  width: 100%;
+}
+
+main{
+  width: 88%;
+  margin: 0 auto;
+}
+
+h1{
+  //color: $overskrifter;
+  font-size: 180%;
+  margin: 0;
+  text-align: center;
+}
+
+h2{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+figure{
+  margin: 0;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+footer{
+  //background-color: $highlight;
 }
