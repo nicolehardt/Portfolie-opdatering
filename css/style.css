@@ -84,7 +84,7 @@ header #open {
 header #close {
   display: none;
   z-index: 10;
-  color: #7097b2;
+  color: black;
 }
 
 nav {
@@ -94,7 +94,7 @@ nav {
   top: 0;
 }
 nav ul {
-  background-color: #fffcf8;
+  background-color: white;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -105,7 +105,7 @@ nav ul {
   list-style-type: none;
 }
 nav ul a {
-  color: #7097b2;
+  color: black;
   text-decoration: none;
   font-size: 150%;
   opacity: 1;
@@ -286,6 +286,7 @@ footer section a button {
 .projektside .oppe h1 {
   font-size: 260%;
   border-bottom: 2px solid black;
+  color: #b2aa9f;
 }
 .projektside .oppe h2 {
   text-align: center;
@@ -341,10 +342,9 @@ footer section a button {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: 10px;
   margin-top: -22px;
   color: #7097b2;
-  background-color: #c4e7ff;
   font-weight: bold;
   font-size: 160%;
   -webkit-transition: 0.6s ease;
@@ -758,5 +758,17 @@ footer section a button {
   #start .projektbilleder .flexcontainer figure button {
     font-size: 100%;
     border-radius: 10px;
+  }
+
+  footer a:hover {
+    color: #7097b2;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    text-decoration: underline;
+  }
+  footer a:hover button {
+    color: #7097b2;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
 }
