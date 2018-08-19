@@ -22,7 +22,7 @@
     <title></title>
 
     <!-- Billede i fane - indsæt logo-->
-    <link rel="icon" type="image/png" href="lillesort.png"> 
+    <link rel="icon" type="image/png" href="lillesort.png">
 
   </head>
 
@@ -33,21 +33,38 @@
     <!-- Header = kasse med logo og burgermenu -->
     <header>
 
-      <!-- Logo billede -->
-      <a href="#"><img src="almostwhite.svg" alt=""></a>
+      <section>
+        <!-- Logo billede -->
+        <a href="#"><img src="stortsort.svg" alt=""></a>
 
-      <!-- Burgermenu -->
-      <button id="open"><i class="fas fa-bars" class="shadow"></i></button>
 
-      <button id="close" class="lukmenu" type="button" name="button"><i class="fas fa-times"></i></button>
+<section class="mobil">
+  <!-- Burgermenu -->
+  <button id="open"><i class="fas fa-bars" class="shadow"></i></button>
 
-      <!-- Navigation  Menu -->
-      <nav>
+  <button id="close" class="lukmenu" type="button" name="button"><i class="fas fa-times"></i></button>
+
+
+
+<!-- Navigation  Menu -->
+<nav id="navmobil">
+  <ul>
+    <a href="#" class="lukmenu"> <li>Startside</li> </a>
+    <a href="#ommigdeler" class="lukmenu"> <li>Om Mig</li> </a>
+    <a href="#portfoliodeler" class="lukmenu"> <li>Portfolio</li> </a>
+    <a href="#kontakt" class="lukmenu"> <li>Kontakt</li> </a>
+  </ul>
+</nav>
+</section>
+</section>
+
+
+      <nav id="navdesktop">
         <ul>
-          <a href="index.html"> <li>Startside</li> </a>
-          <a href="index.html#ommigdeler"> <li>Om Mig</li> </a>
-          <a href="index.html#portfoliodeler"> <li>Portfolio</li> </a>
-          <a href="index.html#kontakt"> <li>Kontakt</li> </a>
+          <a href="#"> <li>Startside</li> </a>
+          <a href="#ommigdeler"> <li>Om Mig</li> </a>
+          <a href="#portfoliodeler"> <li>Portfolio</li> </a>
+          <a href="#kontakt"> <li>Kontakt</li> </a>
         </ul>
       </nav>
 
