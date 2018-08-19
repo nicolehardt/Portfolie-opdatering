@@ -390,7 +390,7 @@ footer section a button {
 
 /* The dots/bullets/indicators */
 .dot {
-  display: absolute;
+  position: absolute;
   cursor: pointer;
   height: 15px;
   width: 15px;
