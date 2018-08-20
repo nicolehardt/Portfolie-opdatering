@@ -141,22 +141,24 @@ main #myBtn:hover {
 #start .overskriftbaggrund {
   background-color: #ffedd1;
 }
+#start article #startside {
+  /*    article{
+        background-color: $knapper;
+        color: $hoverdeler;
+        padding: 10px;
+        width: 230px;
+        h1{
+          color: $hoverdeler;
+          text-align: left;
+        }
+        h2{
+          font-size: 150%;
+          border-top: 1px solid $baggrund;
+        }
+      }*/
+}
 #start article #startside img {
-  width: 200px;
-}
-#start article #startside article {
-  background-color: #c4e7ff;
-  color: #7097b2;
-  padding: 10px;
-  width: 230px;
-}
-#start article #startside article h1 {
-  color: #7097b2;
-  text-align: left;
-}
-#start article #startside article h2 {
-  font-size: 150%;
-  border-top: 1px solid #fffcf8;
+  width: 100%;
 }
 #start .projektbilleder figure {
   width: 160px;
@@ -375,7 +377,6 @@ footer section a button {
 
 /* The dots/bullets/indicators */
 .dot {
-  position: absolute;
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -460,23 +461,25 @@ footer section a button {
   }
 
   #start article #startside {
-    height: 380px;
+    text-align: center;
+    /*height: 380px;*/
+    /*    article{
+          width: 320px;
+          display: inline-block;
+          float: right;
+          margin: 10em auto;
+          h1{
+            font-size: 240%;
+          }
+          h2{
+            font-size: 165%;
+          }
+        }*/
   }
   #start article #startside img {
-    float: left;
-    width: 250px;
-  }
-  #start article #startside article {
-    width: 320px;
-    display: inline-block;
-    float: right;
-    margin: 10em auto;
-  }
-  #start article #startside article h1 {
-    font-size: 240%;
-  }
-  #start article #startside article h2 {
-    font-size: 165%;
+    /*float: left;
+    width: 250px;*/
+    width: 80%;
   }
   #start .deler {
     clear: both;
@@ -569,7 +572,7 @@ footer section a button {
   }
 
   #start article #startside img {
-    width: 350px;
+    width: 60%;
   }
   #start article #startside article {
     width: 430px;
@@ -625,14 +628,29 @@ footer section a button {
     height: 690px;
   }
 
+  .projektside {
+    padding-top: 3em;
+    height: 1000px;
+  }
   .projektside .oppe h2 {
     font-size: 150%;
   }
   .projektside .oppe p {
     font-size: 130%;
+    display: none;
+  }
+  .projektside .nede {
+    width: 40%;
+    display: inline-block;
+    float: right;
+    margin-top: 0;
+  }
+  .projektside .nede h1 {
+    font-size: 190%;
   }
   .projektside .nede p {
     font-size: 115%;
+    width: 100%;
   }
   .projektside .nede ul {
     font-size: 115%;
@@ -644,10 +662,23 @@ footer section a button {
     font-size: 130%;
     margin: 0.5em 0;
   }
+  .projektside .left {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
   .projektside .slideshow-container {
     width: 80%;
   }
+  .projektside .right {
+    width: 40%;
+    display: inline-block;
+    float: right;
+  }
 
+  footer {
+    clear: both;
+  }
   footer article a {
     font-size: 130%;
   }
@@ -692,7 +723,7 @@ footer section a button {
     margin: 0 auto;
   }
   #start article #startside img {
-    width: 260px;
+    width: 50%;
   }
   #start .overskriftbaggrund {
     font-size: 180%;
@@ -738,6 +769,13 @@ footer section a button {
   #start .projektbilleder .flexcontainer figure button {
     font-size: 100%;
     border-radius: 10px;
+  }
+
+  .projektside .nede section a:hover button {
+    background-color: #7097b2;
+    text-decoration: underline;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
 
   footer a:hover {

@@ -131,9 +131,9 @@ main{
   article{
     #startside{
       img{
-        width: 200px;
+        width: 100%;
       }
-      article{
+  /*    article{
         background-color: $knapper;
         color: $hoverdeler;
         padding: 10px;
@@ -146,7 +146,7 @@ main{
           font-size: 150%;
           border-top: 1px solid $baggrund;
         }
-      }
+      }*/
     }
   }
 
@@ -401,7 +401,6 @@ footer{
 
 /* The dots/bullets/indicators */
 .dot {
-  position: absolute;
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -493,12 +492,14 @@ footer{
   #start{
     article{
       #startside{
-        height: 380px;
+        text-align: center;
+        /*height: 380px;*/
         img{
-          float: left;
-          width: 250px;
+          /*float: left;
+          width: 250px;*/
+          width: 80%;
         }
-        article{
+    /*    article{
           width: 320px;
           display: inline-block;
           float: right;
@@ -509,7 +510,7 @@ footer{
           h2{
             font-size: 165%;
           }
-        }
+        }*/
       }
     }
     .deler{
@@ -644,7 +645,7 @@ footer{
     article{
       #startside{
         img{
-          width: 350px;
+          width: 60%;
         }
         article{
           width: 430px;
@@ -710,17 +711,28 @@ footer{
 
 
   .projektside{
+    padding-top: 3em;
+    height: 1000px;
     .oppe{
       h2{
         font-size: 150%;
       }
       p{
         font-size: 130%;
+        display: none;
       }
     }
     .nede{
+      width: 40%;
+      display: inline-block;
+      float: right;
+      margin-top: 0;
+      h1{
+        font-size: 190%;
+      }
       p{
         font-size: 115%;
+        width: 100%;
       }
       ul{
         font-size: 115%;
@@ -735,11 +747,22 @@ footer{
         }
       }
     }
+    .left{
+      width: 50%;
+      display: inline-block;
+      float: left;
+    }
     .slideshow-container{
       width: 80%;
     }
+    .right{
+      width: 40%;
+      display: inline-block;
+      float: right;
+    }
   }
   footer{
+    clear: both;
     article{
       a{
         font-size: 130%;
@@ -805,7 +828,8 @@ footer{
         width: 80%;
         margin: 0 auto;
         img{
-          width: 260px;
+          //width: 260px;
+          width: 50%;
         }
       }
     }
@@ -867,6 +891,21 @@ footer{
           button{
             font-size: 100%;
             border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+  .projektside{
+    .nede{
+      section{
+        a{
+          &:hover{
+            button{
+              background-color: $hoverdeler;
+              text-decoration: underline;
+              transition: 0.2s;
+            }
           }
         }
       }
